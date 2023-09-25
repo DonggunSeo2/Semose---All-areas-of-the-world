@@ -13,15 +13,20 @@
     <body>
         <main id="login_wrap" class="wrap">
             <section>
-                <h1>LOGIN</h1> 
-                <form action="login_ok.php" name="LoginForm" method="post" id="login_form" rel="stylesheet"> 
+                <h1>LOGIN</h1> #제목
+                #form : 웹 페이지에서 사용자로부터 정보를 입력받거나 데이터를 전송하기 위해 사용
+                #action : 로그인 정보를 서버로 전달하고 처리하기 위한 백엔드 스크립트 정의
+                #name : 폼의 이름을 정의
+                #rel : 연결된 스타일 시트(stylesheet)의 위치를 지정 -> 위 코드 참고 시, styles.css 파일에 css 코드 지정되어 있음
+                <form action="login_ok.php" name="LoginForm" method="post" id="login_form" rel="stylesheet"> #로그인 정보와 같이 민감한 정보를 전송 시에 post 방식 사용
                     <p>
                         <input type="text" id="id" name="id" placeholder="ID"><br/>            
                     </p>
                     <p>
                         <input type="password" id="password" name="password" placeholder="password"> 
                     </p>
-                    <p class="forget_nw">
+                    <p class="forget_nw"> #"class" 속성은 해당 요소에 하나 이상의 CSS 클래스를 할당하는 데 사용됩니다. 
+                                        #여기서 "forget_nw"는 클래스 이름, 이 클래스를 가진 요소에 대한 스타일링 정보나 JavaScript 작업을 수행하는 데 사용
                         <a class="#">Forget Password?</a>
                     </p>
                     <p>
